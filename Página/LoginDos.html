@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/EstiloLogin.css">
+    <link rel="stylesheet" href="Js/Login.js">
+    <link rel="shortcut icon" href="Img/carnet-de-identidad.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Inicio</a>
+        </nav>
+    </header>
+    <div class="login">
+        <div class="form">
+
+            <form action="" class="ISesion-form">
+                <img src="img/usuario.png" alt="">
+                <input type="text" id="Nombre" onfocus="OnFocus()" onblur="Blur()" placeholder="Nombre de usuario" />
+                <input type="email" id="Email" onfocus="OnFocus2()" onblur="Blur2()" placeholder="Email" />
+                <input type="password" id="Contraseña" onfocus="OnFocus3()" onblur="Blur3()" placeholder="Contraseña" />
+                <button onclick="alert('Se ha registrado este usuario exitosamente. Recibirá ofertas de libros en su email.')"
+                id="Inicio_S">Registrarse</button>
+            </form>
+        </div>
+
+        <script type="text/javascript">
+
+            function OnFocus(){
+                document.getElementById("Nombre").style.background = "yellow";
+                document.getElementById("Nombre").title=("Ingresa tu nombre"); 
+    
+            }
+            function Blur(){
+                if(document.getElementById("Nombre").value==""){
+                document.getElementById("Nombre").style.background = "red";
+                
+                }
+                else{
+                    document.getElementById("Nombre").style.background = "green";
+                    document.getElementById("Nombre").style.color = "white";
+                }
+            }
+
+            function OnFocus2(){
+                document.getElementById("Email").style.background = "yellow";
+                document.getElementById("Email").title=("Ingresa tu email"); 
+    
+            }
+            function Blur2(){
+                if(document.getElementById("Email").value==""){
+                document.getElementById("Email").style.background = "red";
+                
+                }
+                else{
+                    document.getElementById("Email").style.background = "green";
+                    document.getElementById("Email").style.color = "white";
+                }
+            }
+
+            function OnFocus3(){
+                document.getElementById("Contraseña").style.background = "yellow";
+                document.getElementById("Contraseña").title=("Ingresa tu contraseña"); 
+    
+            }
+            function Blur3(){
+                if(document.getElementById("Contraseña").value==""){
+                document.getElementById("Contraseña").style.background = "red";
+                }
+                else{
+                    document.getElementById("Contraseña").style.background = "green";
+                    document.getElementById("Contraseña").style.color = "white";
+    
+                }
+            }
+        </script>
+</body>
+
+</html>

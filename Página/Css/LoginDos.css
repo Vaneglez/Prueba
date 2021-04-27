@@ -1,0 +1,113 @@
+body {
+    background: #3E5151;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DECBA4, #3E5151);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.login{
+    width: 360px;
+    padding: 20px 0 0;
+    margin: auto;
+}
+
+/* Header */
+
+nav {
+    text-align: right;
+    padding: 20px 0 0 0;
+ }
+ 
+ nav>a {
+    color: #fff;
+    font-weight: 100;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'open sans';
+ }
+ 
+ nav>a:hover {
+    text-decoration: underline;
+ }
+
+ /* Body */
+
+.form{
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    background: linear-gradient(to right, #ffffff5d);
+    max-width: 360px;
+    margin: 0 auto 10px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 1);
+}
+
+.form input{
+    font-family: 'open sans';
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.form button{
+    font-family: 'open sans';
+    text-transform: uppercase; 
+    outline: 0;
+    background: #ccc;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #414141;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+img{
+    padding: 15px;
+}
+
+.mensaje a{
+    color: #414141;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'open sans';
+}
+
+.mensaje a:hover{
+    text-decoration: underline;
+}
+
+.mensaje{
+    font-family: 'open sans';
+    justify-content: space-evenly;
+
+}
+
+form button:hover, form button:active{
+    background: rgb(105, 102, 102);
+}
+
+form .mensaje{
+    margin: 15px 0 0;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.form .Registrar-form{
+    display: none; 
+}
